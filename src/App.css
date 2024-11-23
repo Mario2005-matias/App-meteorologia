@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+
+.container {
+    max-width: 100rem;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+input {
+    width: 60%;
+    max-width: 50rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    outline: none;
+    margin-top: 3rem;
+}
+
+.containerInput {
+    width: 100%;
+    max-width: 50rem;
+}
+
+button {
+    padding: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #da8301;
+    transition: 1s;
+}
+
+.WeatherInformation {
+    width: 90%;
+    max-width: 100rem;
+    background-color: #c6f8ff;
+    margin-top: 2.5rem;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.WeatherInformation > h2 {
+    font-size: 2.5rem;
+}
+
+.containerTempImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+    gap: 2rem;
+}
+
+.containerTempImg > p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.containerTempImg > img {
+    width: 6rem;
+}
+
+.WeatherInformation > p {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+/*Container da sensação termica, unidade e pressão*/
+.containerBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 425px) {
+    .containerBottom {
+        flex-direction: column;
+    }
+}
